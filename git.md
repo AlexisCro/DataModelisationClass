@@ -95,8 +95,11 @@ git commit -m "titre de mon commit"
 Enfin pour mettre à jour notre dépôt distant il faut alors push (pousser) nos données. 
 
 ```sh
-git push
+git push <name>
 ```
+Ici name sera remplacé par ModelisationData.
+
+Si nous avons récupérées notre branches à partir d'un dépôt distant alors il peut ne pas y avoir besoin de spécifier le nom dans cette commande.
 
 Notre dépôt distant est alors à jour avec notre dépôt local :v: :+1:
 
