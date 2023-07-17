@@ -5,7 +5,7 @@
 
 C'est une méthode de modélisation de données.
 
-Merise est un acronyme : Méthdode d'Etude et de Réalisation Informatique pour les Systèmes d'Entreprise. 
+Merise est un acronyme : Méthode d'Etude et de Réalisation Informatique pour les Systèmes d'Entreprise. 
 
 Elle se caractérise par trois points clés:
   - une approche dite systémique :
@@ -98,3 +98,18 @@ Pour être intégrées dans un système d'information, les données doivent êtr
 
 [Exercice modelisation donnée facture](./Exercice/dictionnaire_data.md)
 
+### Les dépendances fonctionnelles
+
+Une dépendence est une relation entre deux attributs d'une table. Elle permet de définir une relation de dépendance entre deux attriibuts d'une table. 
+
+#### Exercice
+Elaborer un MCD à partir d'un dictionnaire de données. 
+
+#### Quelques définitions 
+Propriétés : sont les info de base d'un SI
+
+Entité : c'est une table
+
+Relation : définis par des verbes d'actions  
+
+Cardinalité : 1.N, N.N, 0.N, 0.1, 1.1
