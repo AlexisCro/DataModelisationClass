@@ -103,7 +103,10 @@ Pour être intégrées dans un système d'information, les données doivent êtr
 Une dépendence est une relation entre deux attributs d'une table. Elle permet de définir une relation de dépendance entre deux attriibuts d'une table. 
 
 #### Exercice
-Elaborer un MCD à partir d'un dictionnaire de données. 
+Elaborer un MCD à partir d'un dictionnaire de données.
+ 
+[Enoncer exercice](./Exercice/image-14.png)
+![modélisation exercice](./img/modelisation/Exercice/restaurant.jpg)
 
 #### Quelques définitions 
 Propriétés : sont les info de base d'un SI

@@ -1,8 +1,41 @@
-# GIT <img src="./img/logo_git.png">
+# GIT <img src="./img/logo_git.png" alt="logo git">
 
 ## Introduction 
 
 Git un est logiciel de versionning permettant de tracer les versions des projets et d'avoir des dépôts dit locals et distants afin de faciliter le travail en équipe. 
+
+## Les branches 
+
+Les branches sont une partie importantes de **GIT**.
+Il faut comprendre que GIT est donc un outil de versionning on peut donc l'imager tel qu'une ligne temporelle (branche). 
+
+<img src="./img/branch.png" alt="image branches">
+
+Avec cet outil on va donc pouvoir agir sur notre ligne temporelle en revenant dans le temps, en créant des lignes temporelles différentes qui rejoindront plus tard notre ligne principale.
+
+Chaque point où nous allons pouvoir voyager dans le temps sont des commit. 
+
+Chaque projet va avoir une ligne temporelle pricipale (branche) nommée **main** mais on aura plusieurs lignes temporelle, plusieurs branches plus tard (souvent une par feature, fix, modifications, ...)
+
+Pour créer une branche on utilisera la commande `git branch <nom-de-branche>`. Pour ensuite aller sur la branche que l'on vient de créer on entre la commande `git checkout <nom-de-la-branche>`.
+A partir de ce moment, toutes les actions réalisés sur cette branche seront seulement présent sur cette branches (modifications des fichiers, commit, ...)
+
+**Remarques**
+
+Les modifications des fichiers doivent être enregistrer avant de passer d'une branche à l'autre ou elles doivent être mise de côté (plusieurs commandes existent pour cela telle que `git stash`)
+
+### Les branches et les dépôts distants
+
+Lorsque l'on a fait des modifications sur une une branche nous allons sauvegarder nos données et les pousser vers le dépôt distant. 
+
+Nous avons plusieurs possibilité pour cela mais nous allons faire la plus facilement maintenable.
+
+- Il faut commencer par lié la branche et pour cela on va utiliser la commande suivante : 
+```sh
+git branch --set-upstream-to=ModelisationData/<branch> <branche-locale>
+```
+
+Ainsi une fois sur notre branche et que nous aurons commiter nous n'aurons plus qu'à faire `git push`.
 
 # Les commandes de bases
 ## Instanciation d'un projet GIT
@@ -24,7 +57,7 @@ Cette commande permet de lier un dépôt distant à un dépôt local.
 Exemple ici nous avons instancié un projet donc un dépôt git.
 Au sein de github (ça peut être gitlab ou autre serveur de partage distant du même type), nous instancions un nouveau repertoire et nous lui donnons donc un nom :
 
-Dans notre cas <b>DataModelisationClass</b>
+Dans notre cas **DataModelisationClass**
 
 Pour lier donc pour dépôt local à mon distant se situant sur Github j'entre la commande suivante : 
 ```sh
