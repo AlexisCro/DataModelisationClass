@@ -167,7 +167,7 @@ Prenons donc un exemple pour faciliter l'explication.
 Dans un premier temps on doit récupérer le SHA du commit (son identifiant).
 Entrons donc la commande `git log`
 
-![exemple git log](image.png)
+![exemple git log](./img/image.png)
 
 Nous voyons donc plusieurs chose via cette commande :
 - la première ligne en <em style="color:green;">vert</em> nous avons le mot commit puis son SHA et c'est ce que nous allons récupérer pour le rebase intéractif. 
@@ -185,7 +185,7 @@ git rebase -i a686609671ebdd31c4f24aef00d0f2b1443836b2
 ```
 Voici ce que nous obtenons
 
-![git rebase interactif](image-1.png)
+![git rebase interactif](./img/image-1.png)
 
 **Remarque**
 
