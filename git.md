@@ -44,6 +44,10 @@ Nous avons plusieurs possibilité pour cela mais nous allons faire la plus facil
 git branch --set-upstream-to=ModelisationData/<branch> <branche-locale>
 ```
 
+Remplacez ModelisationData par l'alias donné via la commande [`remote`](#remote).
+
+Il existe un raccourcis afin d'aller plus vite qui est `git push -u ModelisationData main`
+
 Ainsi une fois sur notre branche et que nous aurons commiter nous n'aurons plus qu'à faire `git push`.
 
 # Les commandes de bases
@@ -72,7 +76,7 @@ Pour lier donc pour dépôt local à mon distant se situant sur Github j'entre l
 ```sh
 git remote add ModelisationData https://github.com/AlexisCro/DataModelisationClass.git
 ```
-
+Ici nous avons mis le nom du projet à la place de name mais il s'agit d'un alias et ça peut être origin (souvent le cas) ou bien ce qu'on souhaite. 
 ### Clone
 
 Il se peut que l'on veuille récupérer un dépôt distant d'une équipe ou que nous ayons créé en premier le dépôt distant. Dans ce cas nous utiliserons 
@@ -141,7 +145,7 @@ git push <name>
 ```
 Ici name sera remplacé par ModelisationData.
 
-Si nous avons récupérées notre branches à partir d'un dépôt distant alors il peut ne pas y avoir besoin de spécifier le nom dans cette commande.
+Si nous avons récupérées notre branches à partir d'un dépôt distant ou que nous avons déjà lié notre dépôt via `git push -u` alors il peut ne pas y avoir besoin de spécifier le nom dans cette commande. Entrez juste `git push` dans ce cas.
 
 Notre dépôt distant est alors à jour avec notre dépôt local :v: :+1:
 
