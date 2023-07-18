@@ -108,6 +108,12 @@ Elaborer un MCD à partir d'un dictionnaire de données.
 [Enoncer exercice](./Exercice/image-14.png)
 ![modélisation exercice](./img/modelisation/Exercice/restaurant.jpg)
 
+**Remarque**
+Il faudrait utiliser une relation ternaire au niveau de Menu / Dishes / Commande tel que :
+
+![relation ternaire](./img/modelisation/Exercice/fix-resto.png)
+
+
 #### Quelques définitions 
 Propriétés : sont les info de base d'un SI
 
@@ -142,6 +148,13 @@ Exemple :
 Donc c'est une data qui ne peut être atteinte que par le biais d'une data transitoire. 
 
 Une relation porteuse : c'est une relation qui detient des propriétés
+
+contraintes d'integrité fonctionnelle (CIF) : est définis par le fait qu'une des entités de l'association est completement déterminée par la connaissance d'une ou plusieurs entités participantes à l'association. 
+
+Exemple :
+  - une salle peut contenir 0 ou N ordinateurs.
+  - un ordinateurs existe dans 1.1 salle 
+  - une CIF existe donc si il y a une cardinalité 1.1
 
 #### Exercice agriculteur
 
