@@ -116,3 +116,33 @@ Entité : c'est une table
 Relation : définis par des verbes d'actions  
 
 Cardinalité : 1.N, N.N, 0.N, 0.1, 1.1
+
+Dépendence fonctionnelle : c'est une relation entre 
+ attributs d'une table. Elle permet de définir uen relation de dependance entre 2 attributs.
+
+  Syntaxe :
+  - Numéro adhérent (Nom, prenom, code postale, ville)
+
+Dependence fonctionnelle composee : Elle fera intervenir plus de un attribut côté source par exemple pour une donnée qui est le résultat d'une combinaison de table. 
+
+  Exemple : 
+  - pour le tour de France si on veut le temps d'un coureur sur une course il nous faudra le nom et la course donc `(course, coureur) -> (temps)`
+
+Dependence focntionnelle elementaire : C'est lorsqu'un élément ne peut être obtenu seulement par la connaissance de la source. Une dépendence peut etre elementaire et composee ou non. 
+
+Exemple :
+  - RefProduit -> LibelleProduit
+  - NumCommande RefProduit -> QuantiteCommande
+  - <strike>NumCommande RefProduit -> LibelleProduit</strike>
+
+Dependence focntionnelle elementaire directe
+Exemple :
+  - RefPromo -> NumApprenant -> Nompprenant
+
+Donc c'est une data qui ne peut être atteinte que par le biais d'une data transitoire. 
+
+Une relation porteuse : c'est une relation qui detient des propriétés
+
+#### Exercice agriculteur
+
+[link pour exercice](./Exercice/exercice_agriculteur.md)
