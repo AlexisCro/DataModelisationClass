@@ -155,7 +155,3 @@ Exemple :
   - une salle peut contenir 0 ou N ordinateurs.
   - un ordinateurs existe dans 1.1 salle 
   - une CIF existe donc si il y a une cardinalité 1.1
-
-#### Exercice agriculteur
-
-[link pour exercice](./Exercice/exercice_agriculteur.md)
