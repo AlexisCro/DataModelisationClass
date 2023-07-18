@@ -1,9 +1,9 @@
 Enoncé : 
-[énoncé exerrcice](./Exercice/exercice_agriculteur.docx)
+[énoncé exerrcice](../Exercice/exercice_agriculteur.docx)
 
 MCD :
 
-![MCD exercice agriculteur](image.png)
+![MCD exercice agriculteur](../img/modelisation/Exercice/image-2.png)
 
 MLD :
 
@@ -23,7 +23,7 @@ Vendre_legume (<u>id_legume_vente</u>, #id_vente, #id_legume)
 
 MPD :
 
-![MPD exercice agriculteur](image-4.png)
+![MPD exercice agriculteur](../img/modelisation/Exercice/image-4.png)
 
 Script SQL :
 
