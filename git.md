@@ -20,6 +20,15 @@ Chaque projet va avoir une ligne temporelle pricipale (branche) nommée **main**
 Pour créer une branche on utilisera la commande `git branch <nom-de-branche>`. Pour ensuite aller sur la branche que l'on vient de créer on entre la commande `git checkout <nom-de-la-branche>`.
 A partir de ce moment, toutes les actions réalisés sur cette branche seront seulement présent sur cette branches (modifications des fichiers, commit, ...)
 
+### Quelques commandes pour les branches
+
+```sh
+git branch <name-branch>            #Créer un branche
+git checkout <name-branch>          #Se placer sur la branche
+git branch -D <name-branch>         #Supprime la branche
+git branch -m <old-name> <new-name> #Renomme la branche
+```
+
 **Remarques**
 
 Les modifications des fichiers doivent être enregistrer avant de passer d'une branche à l'autre ou elles doivent être mise de côté (plusieurs commandes existent pour cela telle que `git stash`)
@@ -136,3 +145,56 @@ Si nous avons récupérées notre branches à partir d'un dépôt distant alors 
 
 Notre dépôt distant est alors à jour avec notre dépôt local :v: :+1:
 
+### Rebase 
+
+Avec la commande `git rebase` nous pouvons, comme son nom l'indique, rebaser nos commit. 
+
+Concrètement lorsque nous créons une nouvelle branche celle-ci est créée à partir d'un commit qui sera le commit racine de cette nouvelle branche. Cependant si nous sommes plusieurs à travailler sur un projet un collègue a pu merger une de ses branches plus tard dans la brache principale. Pour avoir notre branche à jour avec le nouveau code injecté dans la branche principale nous allons rebase notre branche avec la principale.
+
+Pour cela supposons que notre branche n'est plus à jour avec la branche main, nous voulons donc rebaser notre branche. Il faut donc entrer les commandes suivantes :
+```sh
+git branch checkout <ma-branche>
+git rebase main
+```
+Avec `checkout` nous nous plaçons sur notre branche à rebaser puis nous rebasons notre branche sur main afin que celle-ci soit à jour. 
+
+Il existe également le rebase intéractif permettant notamment de ré-arranger nos commit au sein d'une branche 
+
+Pour cela on place l'argument -i derrière la commande `git rebase` et on ajoute le SHA du commit que l'on récupère via la commande `git log`.
+
+Prenons donc un exemple pour faciliter l'explication. 
+
+Dans un premier temps on doit récupérer le SHA du commit (son identifiant).
+Entrons donc la commande `git log`
+
+![exemple git log](image.png)
+
+Nous voyons donc plusieurs chose via cette commande :
+- la première ligne en <em style="color:green;">vert</em> nous avons le mot commit puis son SHA et c'est ce que nous allons récupérer pour le rebase intéractif. 
+- L'autheur
+- La date du commit
+- le message du commit
+
+Maintenant que nous avons récupéré notre SHA nous allons pouvoir utiliser `git rebase -i`
+
+Entrons donc la commande 
+```sh
+git rebase -i <SHA>
+# Par exemple
+git rebase -i a686609671ebdd31c4f24aef00d0f2b1443836b2
+```
+Voici ce que nous obtenons
+
+![git rebase interactif](image-1.png)
+
+**Remarque**
+
+Tout se passe dans un editeur tel que vim, il faut donc connaître les actions telles que :
+- i pour insert
+- wq pour write and quit 
+
+Chaque lignes précédées de pick est en réalité un commit. Puis nous avons le message du commit.
+
+On observe qu'il y a ensuite plusieurs options comme 'r', 's' etc. Il suffit donc de remplacer pick par la lettre clé pour réaliser l'action souhaitée. 
+
+Donc si je veux changer le message d'un commit je remplace alors pick du commit souhaité par 'r'.
