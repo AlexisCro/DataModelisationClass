@@ -202,3 +202,32 @@ Chaque lignes précédées de pick est en réalité un commit. Puis nous avons l
 On observe qu'il y a ensuite plusieurs options comme 'r', 's' etc. Il suffit donc de remplacer pick par la lettre clé pour réaliser l'action souhaitée. 
 
 Donc si je veux changer le message d'un commit je remplace alors pick du commit souhaité par 'r'.
+
+## Récupérer les branches distantes
+Nous avons pu voir comment créer des branches, sauvegarder et envoyer nos fichiers, éléments sur GITHUB. 
+
+Mais dans le cas où nous travaillons en équipe il ets possible que nous ayons besoin de récupérer des modifications apportés par nos collègues afin d'être à jour avec le code partagé. 
+
+Pour ça nous utiliserons une commande qui en regroupe 2 `git pull`
+
+### Pull
+En effet `git pull` regroupe 2 commandes :
+- `git fetch` qui permet de récupérer les fichiers distant et les mettre à jour
+- `git merge` qui permet de fusionner ce que nous venons de récupérer avec nos fichiers en local. 
+
+Afin de ne pas avoir à saisir ces deux commandes nous pouvons saisir seulement `git pull`.
+Dans ce cas nous récupérerons la branche sur laquelle nous sommes. 
+
+Exemple : 
+
+Je suis sur ma branche feature1 et mon collègue à travaillé sur la même branche feature1 sur sa machine. Il va alors sauvegarder son travail puis le push comme nous avons vu. Mais ce qui veux dire que notre code local n'est plus à jour. 
+
+Dans ce cas nous devons :
+
+```sh
+git checkout feature1 #On se place sur la branche
+git pull              #On récupère les nouveaux fichiers
+```
+
+Notre code est alors à jour. 
+
