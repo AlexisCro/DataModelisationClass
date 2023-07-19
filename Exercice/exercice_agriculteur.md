@@ -25,7 +25,7 @@ Vendre_fruit (<u>id_fruit_vente</u>, #id_vente, #id_fruit)
 
 Vendre_legume (<u>id_legume_vente</u>, #id_vente, #id_legume)
 
-Script SQL :
+Script MySQL :
 
 ```SQL
 DROP TABLE IF EXISTS Ventes;
