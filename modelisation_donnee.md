@@ -199,3 +199,10 @@ Nous aurons donc ce MLD :
 
 ![exemple MLD](./img/modelisation/image-26.png)
 
+##### Petit exercice pratique :
+
+![exercice](./img/modelisation/Exercice/image-27.png)
+
+MLD :
+
+![MLD](image.png)
