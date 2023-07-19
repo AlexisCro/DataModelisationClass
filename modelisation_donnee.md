@@ -155,3 +155,47 @@ Exemple :
   - une salle peut contenir 0 ou N ordinateurs.
   - un ordinateurs existe dans 1.1 salle 
   - une CIF existe donc si il y a une cardinalité 1.1
+
+### MLD 
+Modèle Logique de Données. 
+
+#### Cas simple 
+Il s'agit de la suite du processus Merise, on se rapproche de la base de données. 
+
+En partant d'un MCD tel que 
+![exemple MCD](./img/modelisation/image-19.png)
+
+Nous arriverons au MLD suivant :
+![exemple MLD](./img/modelisation/image-20.png)
+
+La cardinalité 1.1 ou 0.1 est possédée par une entité forte qui absorbe l'identité de l'autre table et donc possède une clé étrangère. 
+
+#### Cas complexe 
+<h5 style="font-size:14px; text-decoration: underline;">(0.n/ 0.n ou 1.n / 1.n)</h5>
+Partons du MCD suivant :
+
+![exemple MCD](./img/modelisation/image-15.png)
+
+Nous aboutirons à ce MLD
+![exemple MLD](./img/modelisation/image-22.png)
+
+Si la cardinalité maximale est n des deux côtés alors la table relationnelle devient une entité ayant pour identifiant une clé composite c'est à dire composé des 2 clés étrangères des tables jointes.
+
+<h5 style="font-size:14px; text-decoration: underline;">Cas d'une relation ternaire</h5>
+
+En partant du MCD suivant :
+![exemple MCD](./img/modelisation/image-16.png)
+
+On obtiendra donc ce MLD :
+![exemple MLD](./img/modelisation/image-24.png)
+
+<h5 style="font-size:14px; text-decoration: underline;">Cas d'une relation reflexive</h5>
+
+Partons donc de ce MCD :
+
+![exemple MLD](./img/modelisation/image-17.png)
+
+Nous aurons donc ce MLD :
+
+![exemple MLD](./img/modelisation/image-26.png)
+

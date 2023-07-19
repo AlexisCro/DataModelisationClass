@@ -10,3 +10,4 @@ This is a repo for a class about data modelisation
 # Exercise
 - [Exercise one](./Exercice/exercice_agriculteur.md)
 - [Exercise two](./Exercice/exercice_composant.md)
+- [Exercise three](./Exercice/exercice_entreprenariat.md)
