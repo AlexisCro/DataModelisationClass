@@ -30,6 +30,8 @@
 
 ![MCD](image-1.png)
 
+**J'ai fait une erreur : en effet le materiel devrait être rattaché au client et non à l'intervention**
+
 ## MLD
 
 ![Alt text](image-2.png)
