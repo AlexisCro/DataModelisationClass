@@ -16,4 +16,4 @@ This is a repo for a class about data modelisation
 - [MCD](./Examen/MCD.jpeg)
 - [MLD](./Examen/MLD.jpeg)
 - [MPD](./Examen/MPD.md)
-- [Dictionnaire](./Examen/dictionnaire.xlsx)
+- [Dictionnaire](./Examen/dictionnaire_donnee.xlsx)
