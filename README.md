@@ -11,3 +11,9 @@ This is a repo for a class about data modelisation
 - [Exercise one](./Exercice/exercice_agriculteur.md)
 - [Exercise two](./Exercice/exercice_composant.md)
 - [Exercise three](./Exercice/exercice_entreprenariat.md)
+
+# Examen
+- [MCD](./Examen/MCD.jpeg)
+- [MLD](./Examen/MLD.jpeg)
+- [MPD](./Examen/MPD.md)
+- [Dictionnaire](./Examen/dictionnaire.xlsx)
