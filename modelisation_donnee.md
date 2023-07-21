@@ -206,3 +206,65 @@ Nous aurons donc ce MLD :
 MLD :
 
 ![MLD](image.png)
+
+### Les formes normales (FN)
+Ensemble de règles pour éviter les anomalies au sein des BDDR.
+#### Forme normale 1 (1FN)
+Une relation est en premiere forme normale si :
+- tous les attributs sont atomiques
+- les attributs ne contiennent pas de valeurs repetitives
+
+Exemple:
+
+Clients (NumCli, Nom, Prenom, Adresse, Telephone)
+
+Il faudrait avoir 
+
+Clients (NumCli, Nom, Prenom, Adresse, CP, Ville, Telephone)
+
+### Forme normale 2
+- Elle respecte les règles de la première forme 
+- les données de doivent pas dépendre d'une partie de clé primaire (clé composite) 
+
+### Forme normale 3
+- Respecte les règles de la seconde
+- ne contient pas de colonne qui fait référence a un doublon de colonne contenant les mêmes data que dans une autres table
+
+### Diagrammes des flux
+Modelise les flux d'informations entre les acteurs du SI et les acteurs du sytème operant
+
+Domaine d'etude : le perimetre d'une activite au sein d'une entreprise
+
+les flux : les informations qui circulent entre les acteurs, representé par une fleche et porte un nom et peut etre numerote 
+
+Quelques regles :
+- un flux ne peut pas etre bidirectionnele
+- un flux ne doit pas etre reflexif
+- on ne represente pas les flux entre les acteurs externes
+
+## UML
+Unified Modeling Language
+
+C'est un langage de modelisation de données. 
+UML a été normalisé en 1997 par l'OMG (Object Management Group). Son but est de mettre en forme les concepts orientés objjets au travers de diagramme. 
+
+UML propose 13 diagrammes dependants de facon hierearchique et se completant. 
+
+1. Diagrammes statiques : ils permettent de modeliser la structure d'un syst
+  - diagramme de class
+  - diagramme d'objet
+  - diagramme de composants 
+  - diagramme de déploiement
+  - diagramme de paquetages
+  - diagramme de structure composite
+
+2. Diagrammes comportementaux
+  - diagramme cas d'usage
+  - diagramme etats-transitions
+  - diagramme d'activité
+
+3. Diagraammes dynamiques
+  - diagramme de sequences
+  - diagramme de communication
+  - diagramme global d'interaction
+  - diagramme de temps 
